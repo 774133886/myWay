@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<!--<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">-->
+		<!--分享使用-->
+		<meta itemprop="name" content="" />
+		<meta itemprop="description" name="description" content="" />
+		<meta itemprop="image" content="img_url" />
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/global.css">
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	</head>
+
+	<body>
+		<section class="main hgt_all flex_column bg-f6">
+			<div class="flex_1 overflow_auto">
+				<div class="personHeader flex_dom flex_item_mid">
+					<div class="flex_dom flex_item_mid cen">
+						<div class="coverImg personPic" style="background-image: url(../img/slice/personPic.png);"></div>
+						<div class="flex_1 color-fff">
+							<h3 class="font30r mb01 only_line">赵四儿</h3>
+							<p class="font24r only_line">四川省成都市高新区高鹏大道10号</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="bg-fff mb02">
+					<a class="flex_dom flex_item_mid cen hgt1rem personHr" href="javascript:;">
+						<img class="personIcon" src="../img/slice/person1.png" alt="" />
+						<div class="flex_1 font24r color-58">我的订单</div>
+						<span class="font20r color-a3 mr01">查看我的订单</span>
+						<img class="iconRight" src="../img/slice/icon-right.png" alt="" />
+					</a>
+					<a class="flex_dom flex_item_mid cen hgt1rem" href="javascript:;">
+						<img class="personIcon" src="../img/slice/person2.png" alt="" />
+						<div class="flex_1 font24r color-58">收货地址</div>
+						<span class="font20r color-a3 mr01">管理收货地址</span>
+						<img class="iconRight" src="../img/slice/icon-right.png" alt="" />
+					</a>
+				</div>
+				
+				<div class="bg-fff mb02">
+					<a class="flex_dom flex_item_mid cen hgt1rem personHr" href="javascript:;">
+						<img class="personIcon" src="../img/slice/person3.png" alt="" />
+						<div class="flex_1 font24r color-58">毛巾结款</div>
+						<span class="font20r color-a3 mr01">毛巾月度结款</span>
+						<img class="iconRight" src="../img/slice/icon-right.png" alt="" />
+					</a>
+					<a class="flex_dom flex_item_mid cen hgt1rem" href="javascript:;">
+						<img class="personIcon" src="../img/slice/person4.png" alt="" />
+						<div class="flex_1 font24r color-58">送货明细</div>
+						<span class="font20r color-a3 mr01">查看送货明细</span>
+						<img class="iconRight" src="../img/slice/icon-right.png" alt="" />
+					</a>
+				</div>
+				
+				<div class="bg-fff mb02">
+					<a class="flex_dom flex_item_mid cen hgt1rem" href="javascript:;">
+						<img class="personIcon" src="../img/slice/person5.png" alt="" />
+						<div class="flex_1 font24r color-58">系统设置</div>
+						<span class="font20r color-a3 mr01">查看系统设置</span>
+						<img class="iconRight" src="../img/slice/icon-right.png" alt="" />
+					</a>
+				</div>
+			</div>
+			<footer class="curFooter flex_dom cen">
+				<a class="flex_1" href="javascript:;">
+					<i></i>
+					<span>首页</span>
+				</a>
+				<a class="flex_1" href="javascript:;">
+					<i></i>
+					<span>购物车</span>
+				</a>
+				<a class="flex_1 active" href="javascript:;">
+					<i></i>
+					<span>我的</span>
+				</a>
+			</footer>
+		</section>
+		
+		<!--更换头像弹窗-->
+		<div class="mask" onclick="closeMask()"></div>
+		<div class="maskBottom creamMask bg-f6 text-center">
+			<a class="block color-58 bg-fff l-h-08rem" href="javascript:;">拍照</a>
+			<p class="border-b-e5"></p>
+			<a class="block color-58 bg-fff l-h-08rem" href="javascript:;">相册</a>
+			<a class="block color-8d bg-fff l-h-08rem mt02" href="javascript:;" onclick="closeMask()">取消</a>
+		</div>
+	</body>
+	<script type="text/javascript" src="../lib/jquery.1.11.3.min.js"></script>
+	<script type="text/javascript" src="../lib/con_js.6.23.js"></script>
+	<script type="text/javascript" src="../lib/vue.js"></script>
+	<script type="text/javascript" src="../lib/swiper.min.js"></script>
+	<script type="text/javascript" src="../lib/touchSelect.js"></script>
+	<script>
+		//点击打开更换头像弹窗
+		$('.personPic').click(function(){
+			$('.mask,.maskBottom').addClass('open');
+		});
+		//关闭弹窗
+		function closeMask(){
+			$('.mask,.maskBottom').removeClass('open');
+		}
+	</script>
+
+</html>
